@@ -1,0 +1,425 @@
+/* Colors -----
+Primary - #0f0f10;
+Secondary - #1e1e21;
+*/
+
+/* Reset CSS  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Genral Styles */
+body {
+	font-family: "Poppins", sans-serif;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #0f0f10;
+	color: #fff;
+}
+a {
+	text-decoration: none;
+}
+/* NAVBAR START */
+.main_nav {
+	padding: 30px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+}
+.nav_logo {
+	margin: 0;
+	padding: 0;
+}
+.nav_logo img {
+	height: 30px;
+}
+.nav_links {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+.nav_links li a {
+	text-decoration: none;
+	color: #fff;
+	transition: 0.2s;
+	padding: 4px 8px;
+	margin: 0 10px;
+	font-weight: 500;
+}
+.nav_links li a:hover {
+	color: #dad6d6ba;
+}
+.shop_btn {
+	margin-left: 20px;
+}
+/* NAVBAR END */
+
+/* HERO SECTION STYLE START */
+.hero_section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hero_inner {
+	padding-left: 40px;
+}
+.hero_headphone_img {
+	height: 500px;
+	position: relative;
+	top: -120px;
+	right: 50px;
+}
+.hero_heading {
+	font-size: 40px;
+	margin: 20px 0;
+}
+.hero_inner h3 {
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.description {
+	font-size: 12px;
+	font-weight: 200;
+	color: #ffffff8d;
+	max-width: 300px;
+	line-height: 2;
+}
+.add_btn {
+	display: flex !important;
+	align-items: center;
+	margin-top: 20px;
+}
+.add_btn img {
+	height: 17px;
+}
+.add_btn p {
+	margin: 0 10px;
+}
+/* HERO SECTION STYLE END */
+
+/* COMPANIES SECTION */
+.companies_section {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 40px 0;
+}
+
+/* SPECT SECTION */
+.specs_section {
+	padding: 40px 0;
+	text-align: center;
+}
+.specs_headign_img {
+	height: 60px;
+}
+.specs_wrap {
+	display: flex;
+	justify-content: center;
+}
+.specs_detail {
+	text-align: start;
+	max-width: 110px;
+	margin: 25px 0;
+}
+.specs_detail:nth-child(2),
+.specs_detail:nth-child(3) {
+	position: relative;
+	right: 20px;
+}
+.specs_detail h5 {
+	font-weight: 300;
+}
+.specs_detail p {
+	font-weight: 300;
+	font-size: 10px;
+	color: #ffffff9e;
+}
+.specs_main_img {
+	margin-left: 50px;
+}
+
+/* designing the case section */
+.case {
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.case-item {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+}
+
+.case-item-img {
+	scale: 0.8;
+	/* width: 50%; */
+}
+
+.case-item div {
+	width: 20%;
+}
+
+.case-item div p:first-child {
+	color: #bdc0c2;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+.case-item div p:last-child img {
+	scale: 0.8;
+	background-color: transparent;
+}
+
+.case-item div p:last-child {
+	width: fit-content;
+	background: #1e1e21;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	font-size: 12px;
+	padding: 10px 20px;
+}
+
+/* buy product section */
+.buy-product {
+	background: #181a1b;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	margin-top: 70px;
+	padding: 40px 0;
+}
+
+.buy-product div,
+.buy-product p,
+.buy-product h3,
+.buy-product img {
+	background-color: transparent;
+}
+
+.buy-product div {
+	width: 25%;
+}
+
+.buy-product div h3 {
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.buy-product div p {
+	color: #bdc0c2;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.buy-product div div {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	background: #000000;
+	border-radius: 8px;
+	padding: 10px 20px;
+}
+
+.buy-product div div img {
+	scale: 0.8;
+	margin-right: 10px;
+}
+
+.buy-product div div p {
+	margin-bottom: 0;
+	font-size: 12px;
+	color: white;
+}
+
+/* designing the product section for displaying the items */
+.product {
+	display: flex;
+	flex-direction: column;
+	margin: 0 150px;
+}
+
+.product-logo {
+	display: flex;
+	flex-direction: column;
+}
+
+.product-logo {
+	scale: 0.3;
+}
+
+.product-items {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 50px;
+	padding-left: 50px;
+}
+
+.product-card {
+	position: relative;
+	width: 130px;
+	height: 130px;
+	background: #181a1b;
+	border-radius: 8px;
+}
+
+.product-img {
+	width: 75px;
+	height: 100px;
+	position: absolute;
+	z-index: 100;
+	top: -40px;
+	left: 28px;
+}
+
+.product-img,
+.product-card p,
+.product-card span,
+.product-card img,
+.product-card div {
+	background-color: transparent;
+}
+
+.product-info {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 10px 15px;
+}
+
+.product-info p {
+	font-size: 12px;
+}
+
+.product-info p span {
+	color: #bdc0c2;
+}
+
+.product-info div {
+	background: #0a0a0b;
+	border-radius: 8px;
+	padding: 2px 6px;
+}
+
+.product-info div img {
+	width: 13px;
+	height: 13px;
+}
+
+/* designing the footer section */
+footer {
+	margin: 100px 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	position: relative;
+}
+
+.footer-logo {
+	scale: 0.8;
+}
+
+ul li a {
+	font-size: 12px;
+	color: #bdc0c2;
+}
+
+ul li:first-child a {
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+}
+
+ul li:first-child {
+	margin-bottom: 10px;
+}
+
+.footer-subscription {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.footer-subscription div:first-child {
+	background: #181a1b;
+	border-radius: 8px;
+	padding: 5px 10px;
+	display: flex;
+}
+
+.footer-subscription div:first-child input {
+	border: none;
+	background-color: transparent;
+}
+
+.subscribe-button {
+	background: #0a0a0b;
+	border-radius: 8px;
+	padding: 10px 20px;
+	border: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.subscribe-button img {
+	scale: 0.8;
+}
+
+.subscribe-button p {
+	font-size: 12px;
+}
+
+.footer-subscription div:last-child img {
+	margin-right: 10px;
+	scale: 0.8;
+}
+
+.arrow-up {
+	position: absolute;
+	right: -160px;
+	scale: 0.8;
+}
+
+/* Main Button */
+.main_btn {
+	background-color: #1e1e21;
+	color: #fff;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 500;
+	transition: 0.2s;
+	padding: 10px 25px;
+	border-radius: 4px;
+	display: block;
+	box-shadow: #60606d 2px 2px 0px 0px inset, #37373e 1px 1px 0px 0px;
+}
+.main_btn:hover {
+	background-color: #404045;
+}
+
+.btn_lg {
+	padding: 14px 30px;
+	font-size: 16px;
+	border-radius: 7px;
+	margin-top: 30px;
+}
